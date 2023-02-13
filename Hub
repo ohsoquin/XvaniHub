@@ -1,0 +1,108 @@
+--[[
+##     ##    ###    ########  ########    ########  ##    ##    ######## ##          ###     ######  ##    ##  #######  
+###   ###   ## ##   ##     ## ##          ##     ##  ##  ##     ##       ##         ## ##   ##    ## ##   ##  ##     ## 
+#### ####  ##   ##  ##     ## ##          ##     ##   ####      ##       ##        ##   ##  ##       ##  ##   ##     ## 
+## ### ## ##     ## ##     ## ######      ########     ##       ######   ##       ##     ## ##       #####    ##     ## 
+##     ## ######### ##     ## ##          ##     ##    ##       ##       ##       ######### ##       ##  ##   ##     ## 
+##     ## ##     ## ##     ## ##          ##     ##    ##       ##       ##       ##     ## ##    ## ##   ##  ##     ## 
+##     ## ##     ## ########  ########    ########     ##       ##       ######## ##     ##  ######  ##    ##  #######  
+]]
+
+
+
+
+
+
+
+if game.PlaceId == 2788229376 then
+    local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+    local Window = OrionLib:MakeWindow({Name = "Xvani-Hub | DaHood GUI", HidePremium = false, IntroEnabled = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+    
+    local PremiumTab = Window:MakeTab({
+        Name = "👑 Aimbots",
+        Icon = "rbxassetid://1650853917",
+        PremiumOnly = false
+    })
+
+    local PremiumExtraTab = Window:MakeTab({
+        Name = "👑 Extra",
+        Icon = "rbxassetid://1650853917",
+        PremiumOnly = false
+    })
+    
+
+    PremiumExtraTab:AddButton({
+        Name = "Korblox & Headless",
+        Callback = function()
+            loadstring(game:HttpGet("https://pastebin.com/raw/WJueCRHw",true))()
+          end    
+    })
+
+    PremiumTab:AddButton({
+        Name = "FovAimbot - C to Toggle",
+        Callback = function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/ohsoquin/stuff/main/STUFF",true))()
+          end    
+    })
+    
+    local AimBotTab = Window:MakeTab({
+        Name = "🔫 AimBots",
+        Icon = "rbxassetid://11765928007",
+        PremiumOnly = false
+    })
+    
+    PremiumTab:AddButton({
+        Name = "InvisAimbot - T to Toggle",
+        Callback = function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/ohsoquin/stuff2/main/stuff22",true))()
+          end    
+    })
+
+
+    AimBotTab:AddButton({
+        Name = "HitboxLock - B to Toggle",
+        Callback = function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/ohsoquin/box/main/real",true))()
+          end    
+    })
+
+
+    AimBotTab:AddButton({
+        Name = "FovSilentAim",
+        Callback = function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/ohsoquin/read/main/real"))()
+          end    
+    })
+
+    local RandomTab = Window:MakeTab({
+        Name = "❓ Extra",
+        Icon = "rbxassetid://11765928007",
+        PremiumOnly = false
+    })
+   
+    RandomTab:AddButton({
+        Name = "FreeFists - Q to Toggle",
+        Callback = function()
+            loadstring(game:HttpGet("https://pastebin.com/raw/iTEZuhSf",true))()
+          end    
+    })
+
+    RandomTab:AddButton({
+        Name = "Fly - X to Toggle",
+        Callback = function()
+            loadstring(game:HttpGet("https://pastebin.com/raw/sDKjh2Ye",true))()
+          end    
+    })
+    
+    RandomTab:AddButton({
+        Name = "Bike Fly",
+        Callback = function()
+            loadstring(game:HttpGet("https://pastebin.com/raw/abc1QJub",true))()
+          end    
+    })
+    
+    
+    
+    
+    end
+    OrionLib:Init()
